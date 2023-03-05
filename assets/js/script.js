@@ -63,11 +63,17 @@ function resetScore() {
 function gameLoop() {
     
     number1 = randomiseIntEasy(10000);
+    setTimeout(function(){ number1 = '' }, 2000);
     number2 = randomiseIntEasy(10000);
+    setTimeout(function(){ number2 = '' }, 2000);
     
     numberOne.innerHTML = number1;
     numberTwo.innerHTML = number2;
     isHigherThanOne = isHigher(number1, number2);
 }
+
+function hideNum() {
+    document.getElementsByClassName('.number1').style.visibility="hidden";
+} setTimeout("hideNum()", 2000);
 
 gameLoop()
