@@ -1,5 +1,7 @@
 const numberOne = document.querySelector('.number1');
 const numberTwo = document.querySelector('.number2');
+const answer = document.querySelector('.answer');
+const score = document.querySelector('.score');
 
 let number1 = 0;
 let number2 = 0;
@@ -9,19 +11,22 @@ let isHigherThanOne = false;
 function buttonClicked(guess) {
     if (guess === 'higher') {
         if (isHigherThanOne) {
-            console.log('Correct')
+            result = 'Correct'
         } else {
-            console.log('Wrong')
+            result = 'Wrong'
         }
     }
 
      if (guess === 'lower') {
         if (isHigherThanOne) {
-            console.log('Wrong')
+            result = 'Wrong'
         } else {
-            console.log('Correct')
+            result = 'Correct'
         }
     }
+
+    answer.innerHTML = result
+
     gameLoop()
 }
 
