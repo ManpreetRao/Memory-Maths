@@ -6,25 +6,29 @@ const score = document.querySelector('.score');
 let number1 = 0;
 let number2 = 0;
 let isHigherThanOne = false;
+let currentScore = 0;
 
 //A function to validate whether the answer was correct
 function buttonClicked(guess) {
     if (guess === 'higher') {
         if (isHigherThanOne) {
-            result = 'Correct'
+            result = 'Correct!'
+            currentScore = ++currentScore
         } else {
-            result = 'Wrong'
+            result = 'Wrong :('
         }
     }
 
      if (guess === 'lower') {
         if (isHigherThanOne) {
-            result = 'Wrong'
+            result = 'Wrong :('
         } else {
-            result = 'Correct'
+            result = 'Correct!'
+            currentScore = ++currentScore
         }
     }
 
+    score.innerHTML = currentScore
     answer.innerHTML = result
 
     gameLoop()
@@ -50,4 +54,6 @@ function gameLoop() {
     numberTwo.innerHTML = number2;
     isHigherThanOne = isHigher(number1, number2);
 }
+
+gameLoop()
 
