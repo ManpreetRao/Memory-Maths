@@ -56,6 +56,9 @@ button {
     .heading {
         font-size: 2rem;
     }
+    div > .num-container {
+        font-size: small;
+    }
     span {
         padding: 1.75rem;
         font-weight: 600;
