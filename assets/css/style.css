@@ -11,3 +11,7 @@ body {
     font-size: 3rem;
 }
 /*Game Containers*/
+.container {
+    margin: auto;
+    border: 7px dotted hsl(240, 100%, 50%, 50%);
+}
