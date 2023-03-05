@@ -1,3 +1,13 @@
+/*Global Styling*/
 body {
-    background-color: blue;
+    background-color: lightcyan;
+    color: blue;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 1.25rem;
 }
+
+.heading {
+    font-size: 3rem;
+}
+/*Game Containers*/
