@@ -1,13 +1,27 @@
 const numberOne = document.querySelector('.number1');
 const numberTwo = document.querySelector('.number2');
 
+let number1 = 0;
+let number2 = 0;
+let isHigherThanOne = false;
 
 function buttonClicked(guess) {
     if (guess === 'higher') {
-        console.log('higher')
-    } else if (guess === 'lower') {
-        console.log('lower')
+        if (isHigherThanOne) {
+            console.log('Correct')
+        } else {
+            console.log('Wrong')
+        }
     }
+
+     if (guess === 'lower') {
+        if (isHigherThanOne) {
+            console.log('Wrong')
+        } else {
+            console.log('Correct')
+        }
+    }
+    gameLoop()
 }
 
 function randomiseInt(max) {
@@ -15,8 +29,16 @@ function randomiseInt(max) {
 
 }
 
-let number1 = randomiseInt(10000);
-let number2 = randomiseInt(10000);
+function isHigher (number1, number2) {
+    return number2 > number1;
+}
 
-numberOne.innerHTML = number1;
-numberTwo.innerHTML = number2;
+function gameLoop() {
+    number1 = randomiseInt(10000);
+    number2 = randomiseInt(10000);
+    
+    numberOne.innerHTML = number1;
+    numberTwo.innerHTML = number2;
+    isHigherThanOne = isHigher(number1, number2);
+}
+
