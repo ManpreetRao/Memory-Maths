@@ -9,7 +9,7 @@ let isHigherThanOne = false;
 let currentScore = 0;
 
 //A function to validate whether the answer was correct
-function buttonClicked(guess) {
+async function buttonClicked(guess) {
     if (guess === 'higher') {
         if (isHigherThanOne) {
             result = 'Correct!'
@@ -28,14 +28,21 @@ function buttonClicked(guess) {
         }
     }
 
-    score.innerHTML = currentScore
-    answer.innerHTML = result
+    score.innerHTML = currentScore  
+    answer.innerHTML = result;
 
+    await giveResult()
+}
+
+async function giveResult(result) {
+    await setTimeout(() => {
+        answer.innerHTML = '';
+    }, 1000)
     gameLoop()
 }
 
-//A function to randomise the numbers
-function randomiseInt(max) {
+//A function to randomise the numbers for first 5 levels
+function randomiseIntEasy(max) {
     return Math.floor(Math.random() * (max + 1));
 
 }
@@ -45,10 +52,18 @@ function isHigher (number1, number2) {
     return number2 > number1;
 }
 
+//A function to allow you to reset the game score
+function resetScore() {
+    currentScore = 0;
+    score.innerHTML = currentScore;
+    gameLoop()
+}
+
 //A function to insert the randomised numbers into the index file
 function gameLoop() {
-    number1 = randomiseInt(10000);
-    number2 = randomiseInt(10000);
+    
+    number1 = randomiseIntEasy(10000);
+    number2 = randomiseIntEasy(10000);
     
     numberOne.innerHTML = number1;
     numberTwo.innerHTML = number2;
@@ -56,4 +71,3 @@ function gameLoop() {
 }
 
 gameLoop()
-
