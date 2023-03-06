@@ -29,6 +29,12 @@ span {
     font-size: 1.5rem;
 }
 
+.lives {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
 button {
     background-color: lightcyan;
     color: blue;
