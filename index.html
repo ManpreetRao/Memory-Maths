@@ -14,9 +14,11 @@
 </head>
 <body>
     <h1 class="heading">Memory Maths <i class="fa-solid fa-brain"></i></h1>
-    <p>You will need to determine whether the second number is higher than the first. <br>But beware! The numbers will disappear after a while, so be quick with your decision.</p>
+    <p>You will need to determine whether the second number is higher than the first. <br>But beware! You have 5 seconds to begin with, with every wrong asnwer costing you a further 0.5 second decuction to your total time.<br>Each correct asnwer will give you 0.25 seconds back to the timer.</p>
 
     <div class="container">
+        <!--A timer to indicate how much time the user has left-->
+        <div class="time"><span id="exact-time">0</span>Seconds</div>
         <!--the divs containing the randomised numbers-->
         <div class="num-container">Number 1:<span class="number1">10</span></div>
         <div class="num-container">Number 2:<span class="number2">2</span></div>
@@ -37,6 +39,12 @@
         </div>
     </div>
 
+    <div class="result container">
+        <p>Great attempt! You scored 0 points</p>
+        <div class="buttons">
+            <button onclick="gameLoop()">Try again?</button>
+        </div>
+    </div>
     
 
     <script src="assets/js/script.js"></script>

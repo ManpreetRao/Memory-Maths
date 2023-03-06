@@ -66,3 +66,8 @@ button {
         visibility: visible;
     }
 }
+
+/*End result container styling*/
+.result {
+    visibility: hidden;
+}

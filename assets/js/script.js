@@ -13,21 +13,23 @@ let time = 5000;
 async function buttonClicked(guess) {
     if (guess === 'higher') {
         if (isHigherThanOne) {
-            result = 'Correct!'
-            currentScore = ++currentScore
-            time = time + 250
+            result = 'Correct!';
+            currentScore = ++currentScore;
+            time = time + 250;
         } else {
-            result = 'Wrong :('
-            time = time - 500
+            result = 'Wrong :(';
+            time = time - 500;
         }
     }
 
      if (guess === 'lower') {
         if (isHigherThanOne) {
-            result = 'Wrong :('
+            result = 'Wrong :(';
+            time = time - 500;
         } else {
-            result = 'Correct!'
-            currentScore = ++currentScore
+            result = 'Correct!';
+            currentScore = ++currentScore;
+            time = time + 250;
         }
     }
 
@@ -59,12 +61,19 @@ function isHigher (number1, number2) {
 //A function to allow you to reset the game score
 function resetScore() {
     currentScore = 0;
+    time = 5000
     score.innerHTML = currentScore;
     gameLoop()
 }
 
 //A function to insert the randomised numbers into the index file
 function gameLoop() {
+    if (time < 100) {
+        document.querySelector('.container').style.visibility = "hidden";
+        document.querySelector('.number1').style.visibility = "hidden";
+        document.querySelector('.number2').style.visibility = "hidden";
+        document.querySelector('.result').style.visibility = "visible";
+    }
     document.querySelector('.number1').style.visibility = "visible";
     document.querySelector('.number2').style.visibility = "visible";
     number1 = randomiseIntEasy(10000);
@@ -73,6 +82,7 @@ function gameLoop() {
     numberOne.innerHTML = number1;
     numberTwo.innerHTML = number2;
     isHigherThanOne = isHigher(number1, number2);
+    document.querySelector('#exact-time').innerHTML = (time / 1000);
 }
 
 gameLoop()
