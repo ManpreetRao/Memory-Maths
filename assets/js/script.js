@@ -61,8 +61,10 @@ function isHigher (number1, number2) {
 //A function to allow you to reset the game score
 function resetScore() {
     currentScore = 0;
-    time = 5000
+    time = 5000;
     score.innerHTML = currentScore;
+    document.querySelector('.container').style.visibility = "visible";
+    document.querySelector('.result').style.visibility = "hidden";
     gameLoop()
 }
 
