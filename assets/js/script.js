@@ -76,7 +76,8 @@ function gameLoop() {
         document.querySelector('.container').style.visibility = "collapse";
         document.querySelector('.result').style.visibility = "visible";
         document.querySelector('#result-text').innerHTML = `<p>Awww.. You ran out of lives :(<br>Great attempt! You scored ${currentScore} points</p><br><p>Your high score is ${highScore}</p>`;
-    } else if (currentScore > 30) {
+    } else if (currentScore > 29) {
+        highScore = 30;
         document.querySelector('.container').style.visibility = "collapse";
         document.querySelector('.result').style.visibility = "visible";
         document.querySelector('#result-text').innerHTML = `<p>Amazing! <br>You've got too much health for me to handle! You scored 30 points</p><br><p>Your high score is ${highScore}</p>`;
