@@ -54,6 +54,11 @@ button {
     padding: 1rem;
 }
 
+/*End result container styling*/
+.result {
+    visibility: hidden;
+}
+
 /*For smaller screen sizes*/
 @media (max-width: 320px) {
     body {
@@ -73,7 +78,3 @@ button {
     }
 }
 
-/*End result container styling*/
-.result {
-    visibility: hidden;
-}
