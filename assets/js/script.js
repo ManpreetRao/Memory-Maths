@@ -73,10 +73,17 @@ function resetScore() {
 function gameLoop() {
     //A condition to allow the game to end
     if (lives < 100) {
-        document.querySelector('.container').style.visibility = "hidden";
+        document.querySelector('.container').style.visibility = "collapse";
         document.querySelector('.result').style.visibility = "visible";
         document.querySelector('#result-text').innerHTML = `<p>Awww.. You ran out of lives :(<br>Great attempt! You scored ${currentScore} points</p><br><p>Your high score is ${highScore}</p>`
-    }
+    } 
+    //A condition to stop the game when the user scores 30 points
+    if (currentScore > 30) {
+        document.querySelector('.container').style.visibility = "collapse";
+        document.querySelector('.result').style.visibility = "visible";
+        document.querySelector('#result-text').innerHTML = `<p>Amazing! <br>You've got too much health for me to handle! You scored ${currentScore} points</p><br><p>Your high score is ${highScore}</p>`
+    } 
+
     number1 = randomiseIntEasy(10000);
     number2 = randomiseIntEasy(10000);
 

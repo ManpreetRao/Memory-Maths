@@ -14,34 +14,40 @@ The colours I used were in the same colour group yet highly contrasting to make 
 <br>
 <h2>Features</h2>
 <hr>
+<strong>Heading</strong>
+<br>
 I added the game's name as a heading with 3 font awesome icons as the game logo, a heart (representing the users lives) trapped between greater and less than signs.
 <br>
 <img src="assets/images/header.png" alt="The text 'Survival Maths' with a greater than sign, a heart and a less than sign next to each other to form a logo">
 <br>
+<strong>Description</strong>
+<br>
 I added a description of the game and its rules so that the user is clear on how the game operates.
 <img src="assets/images/description.png" alt="Text explaining how the game works">
+<br>
+<strong>Game Area</strong>
 <br>
 In the game area, I added a dotted border to the game area to keep the user's attention focused on this area once the game had begun. It also breaks up the page to give a clear indication of when the game area starts and the description ends. I created buttons, using the same colour scheme as the rest of the page for consistency, to allow the user to make the guesses 'Higher' & 'Lower', as well as a reset button to allow the user to start the game over with a new set of lives and a cleared score. The user is also able to track how many lives they have as this is being reflected at the top of the game area.
 <br>
 <img src="assets/images/game_area.png" alt="A screenshot of the game area">
+<br>
+<strong>Results Area</strong>
 <br>
 I applied the same styling to the result area to keep the game feeling consistent. However, once the user has depleted their lives, the game area is hidden and the result area is finally shown. In the result area, I made sure to include the score that the user achieved in their most recent round, the high score and a button to reset the game so that the user is taken back to the game area.
 <br>
 <img src="assets/images/results.png" alt="A screenshot of the results area that highlights how the game area is now hidden">
 <br>
 <h2>Testing</h2>
-
+<hr>
 Testing across different browsers
-
+<br>
 <h2>Validator Testing</h2>
-HTML Validator
-
-CSS Validator
-
-JavaScript Validation
-
-Accesibility
-
+<ul>
+<li>HTML Validation</li>
+<li>CSS Validation</li>
+<li>JavaScript Validation</li>
+<li>Accesibility</li>
+</ul>
 
 <h2>Bugs</h2>
 
