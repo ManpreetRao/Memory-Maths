@@ -1,19 +1,16 @@
 <h1>Survival Maths</h1>
-<hr>
 Survival Maths is a maths game that requires the user to choose whether the second number generated to the screen in higher or lower than the first. The user initially has 3 lives, that can be detracted from by 0.5 increments if an incorrect answer is chosen. The user has a chance to earn back lives in 0.25 increments for every correct answer chosen. The user can also keep track of their high score, which will update and save every time the top score is beaten and the game is reset. 
 <br>
 The purpose of this game is to test the user's number comprehension, in this case it is the ability to understand the relation between two random numbers. The concept of the lives is included to add an element of urgency and motivation to get the questions right because their in-game health is at risk. It prevents the user from spamming a button to achieve a high score, or make random guesses. 
 <br>
-The high score is shown to the user to foster a sense of competitiveness, so they would want to play the game again in order to top the existing high score. As a result, the increased gameplay would improve their number comprehension. 
+The high score is shown to the user to foster a sense of competitiveness, so they would want to play the game again in order to top the existing high score. As a result, the increased gameplay would improve their number comprehension. However, to prevent the game from feeling monotonous, the score limit is capped at 30 and the game will end once the user reaches this score.
 <br>
 <img src="assets/images/multi_device_mock_up.png" alt="Responsive Mockup">
 <h2>Colour Palette</h2>
-<hr>
 The colours I used were in the same colour group yet highly contrasting to make sure that the user's attention is not taken away from the game with any other distracting colour choices. I kept the number of different colours used to two so that the page did not look too busy. 
 <img src="assets/images/colour_palette.png" alt="Colour palette showing blue and light cyan">
 <br>
 <h2>Features</h2>
-<hr>
 <strong>Heading</strong>
 <br>
 I added the game's name as a heading with 3 font awesome icons as the game logo, a heart (representing the users lives) trapped between greater and less than signs.
@@ -38,7 +35,6 @@ I applied the same styling to the result area to keep the game feeling consisten
 <img src="assets/images/results.png" alt="A screenshot of the results area that highlights how the game area is now hidden">
 <br>
 <h2>Testing</h2>
-<hr>
 Testing across different browsers
 <br>
 <h2>Validator Testing</h2>
