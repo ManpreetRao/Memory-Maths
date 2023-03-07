@@ -1,18 +1,21 @@
-<h1>Memory Maths</h1>
-This is a maths game that requires the user to choose whether the second number generated to the screen in higher or lower than the first. The numbers will disappear after a few seconds, so the users will have to use their number comprehension skills, as well as their memorisation skills.
+<h1>Survival Maths</h1>
+This is a maths game that requires the user to choose whether the second number generated to the screen in higher or lower than the first. The user initially has 3 lives, that can be detracted from by 0.5 increments if an incorrect answer is chosen. The user has a chance to earn back lives in 0.25 increments for every correct answer chosen. 
+
+The user can also keep track of their high score, which will update and save every time the top score is beaten and the game is reset. 
 
 <h2>Colour Palette</h2>
 The colours I used were simple and highly contrasting to make sure that the user's attention is not taken away from the game with any other distracting colour choices.
+Blue and lightcyan.
 
 <h2>Features</h2>
 
-Heading with font awesome
+I added the game's name as a heading with 3 font awesome icons as the game logo, a heart (representing the users lives) trapped between greater and less than signs.
 
-a description of the game
+I added a description of the game and its rules so that the user is clear on how the game operates.
 
-a secitoned out game area - made obvious withthe border
+I added a dotted border to the game area to keep the user's attention focused on this area once the game had begun. It also breaks up the page to give a clear indication of when the game area starts and the description ends. 
 
-buttons for higher, lower and to restart/reset the score
+I created buttons, using the same colour scheme as the rest of the page for consistency, to allow the user to make the guesses 'Higher' & 'Lower', as well as two variations of a reset button to allow the user to start the game over with a new set of lives and a cleared score.
 
 <h2>Testing</h2>
 
