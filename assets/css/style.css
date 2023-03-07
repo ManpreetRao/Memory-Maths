@@ -59,13 +59,16 @@ button {
     visibility: hidden;
 }
 
-/*For smaller screen sizes*/
+/*For small screen sizes*/
 @media (max-width: 450px) {
     body {
         font-size: 1rem;
     }
     .heading {
         font-size: 2rem;
+    }
+    div p {
+        font-size: 1.25rem;
     }
     div > .num-container {
         font-size: small;
@@ -86,8 +89,11 @@ button {
     .heading {
         font-size: 1.25rem;
     }
+    div p {
+        font-size: 1rem;
+    }
     div > .num-container {
-        font-size: smaller;
+        font-size: 1rem;
     }
     span {
         padding: 1.5rem;
