@@ -71,6 +71,7 @@ function resetScore() {
 
 //A function to insert the randomised numbers into the index file
 function gameLoop() {
+    //A condition to allow the game to end
     if (lives < 100) {
         document.querySelector('.container').style.visibility = "hidden";
         document.querySelector('.result').style.visibility = "visible";
@@ -78,16 +79,19 @@ function gameLoop() {
     }
     number1 = randomiseIntEasy(10000);
     number2 = randomiseIntEasy(10000);
+
     
     numberOne.innerHTML = number1;
     numberTwo.innerHTML = number2;
     isHigherThanOne = isHigher(number1, number2);
     document.querySelector('#exact-lives').innerHTML = (lives / 1000);
+    //The logic to keep the highest score as the high score
     if (highScore === 0) {
         highScore = currentScore;
     } else if (highScore < currentScore) {
         highScore = currentScore;
     }
+
 }
 
 gameLoop()
