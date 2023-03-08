@@ -34,12 +34,11 @@ span {
     font-size: 1.5rem;
 }
 
-
 button {
     background-color: lightcyan;
     color: blue;
     
-    font-family: font-family: 'Roboto Mono', monospace;
+    font-family:'Roboto Mono', monospace;
     text-transform: uppercase;
 
     border: 2px solid hsl(240, 100%, 50%, 50%);

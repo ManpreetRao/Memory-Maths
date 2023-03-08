@@ -40,7 +40,10 @@ Testing across different browsers
 <h2>Validator Testing</h2>
 <ul>
 <li>HTML Validation</li>
+No errors were found when I passed my code through the official <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F#textarea">W3C validator</a>.
+<br>
 <li>CSS Validation</li>
+One error was found when I passed my code through the official <a href="">Jigsaw validator</a>.
 <li>JavaScript Validation</li>
 <li>Accesibility</li>
 </ul>
