@@ -43,12 +43,25 @@ Testing across different browsers
 No errors were found when I passed my code through the official <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F#textarea">W3C validator</a>.
 <br>
 <li>CSS Validation</li>
-One error was found when I passed my code through the official <a href="">Jigsaw validator</a>.
+One error was found when I passed my code through the official. <a href="https://jigsaw.w3.org/css-validator/#validate_by_input">Jigsaw validator</a>.
+<br>
+<img src="assets/images/css_validator.png" alt="A screenshot of the CSS validator flagging an unecessary 'font-family' in the styling code">
+<br>
+In order to fix this issue, I simply looked at line 41 and took out the duplication of 'font-family:' from the code.
 <li>JavaScript Validation</li>
-<li>Accesibility</li>
+I ran my code through the official <a href="https://jshint.com/">JSHint validator</a>:
+<ul>
+<li>There are 7 functions in this file.</li>
+<li>Function with the largest signature take 2 arguments, while the median is 1.</li>
+<li>Largest function has 18 statements in it, while the median is 1.</li>
+<li>The most complex function has a cyclomatic complexity value of 5 while the median is 1.</li>
+<li>I had 15 warnings that I felt were not an issue that affected the webpage</li>
+<li>JSHint flagged one undefine variable 'result', which I left as it was due to the fact that attempting to define the variable with let 'let' caused more issues.</li>
+<li>'buttonClicked' abd 'resetScore' were listed as two unused variables, which does not cause issues to the functionality of my code, so I left this as it was.</li>
 </ul>
+<li>Accessibility</li>
 
-<h2>Bugs</h2>
+</ul>
 
 <h2>Features for the future</h2>
 
@@ -58,5 +71,8 @@ To add more levels that increase the difficulty. For example, both of the maths 
 I deployed the site to GitHub by accessing the repository I had created for the project, going into settings and choosing the main branch to deploy from in the Pages section. Any edits I made since the deployment had been committed to the repository.
 
 <h2>Resources and Credits</h2>
-Spencer Barriball
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random - for the max random number
+<ul>
+<li>Spencer Barriball - How to use async functions and time-outs, as well as the initial idea for the user's lives.</li> 
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random">Mozilla.org</a> - How to implement the max random number code.</li>
+<li>Fontawesome - for the use of icons in the heading and the lives title.</li>
+</ul>

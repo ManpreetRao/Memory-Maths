@@ -34,18 +34,18 @@ async function buttonClicked(guess) {
         }
     }
 
-    score.innerHTML = currentScore  
+    score.innerHTML = currentScore;
     answer.innerHTML = result;
 
-    await giveResult()
+    await giveResult();
 
-    gameLoop()
+    gameLoop();
 }
 
 async function giveResult(result) {
     await setTimeout(() => {
         answer.innerHTML = '';
-    }, 750)
+    }, 750);
 }
 
 //A function to randomise the numbers for first 5 levels
@@ -66,7 +66,7 @@ function resetScore() {
     score.innerHTML = currentScore;
     document.querySelector('.container').style.visibility = "visible";
     document.querySelector('.result').style.visibility = "hidden";
-    gameLoop()
+    gameLoop();
 }
 
 //A function to insert the randomised numbers into the index file
@@ -102,4 +102,4 @@ function gameLoop() {
 
 }
 
-gameLoop()
+gameLoop();
