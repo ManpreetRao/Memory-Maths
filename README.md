@@ -35,8 +35,6 @@ I applied the same styling to the result area to keep the game feeling consisten
 <img src="assets/images/results.png" alt="A screenshot of the results area that highlights how the game area is now hidden">
 <br>
 <h2>Testing</h2>
-Testing across different browsers
-<br>
 <h2>Validator Testing</h2>
 <ul>
 <li>HTML Validation</li>
@@ -55,12 +53,9 @@ I ran my code through the official <a href="https://jshint.com/">JSHint validato
 <li>Function with the largest signature take 2 arguments, while the median is 1.</li>
 <li>Largest function has 18 statements in it, while the median is 1.</li>
 <li>The most complex function has a cyclomatic complexity value of 5 while the median is 1.</li>
-<li>I had 15 warnings that I felt were not an issue that affected the webpage</li>
-<li>JSHint flagged one undefine variable 'result', which I left as it was due to the fact that attempting to define the variable with let 'let' caused more issues.</li>
-<li>'buttonClicked' abd 'resetScore' were listed as two unused variables, which does not cause issues to the functionality of my code, so I left this as it was.</li>
+<li>JSHint flagged one undefine variable 'result', which I fixed by declaring result with 'let'.</li>
+<li>'buttonClicked' abd 'resetScore' were falsely listed as two unused variables, these functions were called on in the HTML code.</li>
 </ul>
-<li>Accessibility</li>
-
 </ul>
 
 <h2>Features for the future</h2>

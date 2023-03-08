@@ -9,6 +9,7 @@ let isHigherThanOne = false;
 let currentScore = 0;
 let lives = 3000;
 let highScore = 0;
+let result;
 
 //A function to validate whether the answer was correct
 async function buttonClicked(guess) {
