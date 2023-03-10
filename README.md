@@ -38,16 +38,16 @@ I applied the same styling to the result area to keep the game feeling consisten
 <h2>Validator Testing</h2>
 <ul>
 <li>HTML Validation</li>
-No errors were found when I passed my code through the official <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F#textarea">W3C validator</a>.
+No errors were found when I passed my code through the official <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F#textarea" target="_blank">W3C validator</a>.
 <br>
 <li>CSS Validation</li>
-One error was found when I passed my code through the official. <a href="https://jigsaw.w3.org/css-validator/#validate_by_input">Jigsaw validator</a>.
+One error was found when I passed my code through the official. <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank">Jigsaw validator</a>.
 <br>
 <img src="assets/images/css_validator.png" alt="A screenshot of the CSS validator flagging an unecessary 'font-family' in the styling code">
 <br>
 In order to fix this issue, I simply looked at line 41 and took out the duplication of 'font-family:' from the code.
 <li>JavaScript Validation</li>
-I ran my code through the official <a href="https://jshint.com/">JSHint validator</a>:
+I ran my code through the official <a href="https://jshint.com/" target="_blank">JSHint validator</a>:
 <ul>
 <li>There are 7 functions in this file.</li>
 <li>Function with the largest signature take 2 arguments, while the median is 1.</li>
@@ -55,15 +55,20 @@ I ran my code through the official <a href="https://jshint.com/">JSHint validato
 <li>The most complex function has a cyclomatic complexity value of 5 while the median is 1.</li>
 <li>JSHint flagged one undefine variable 'result', which I fixed by declaring result with 'let'.</li>
 <li>'buttonClicked' abd 'resetScore' were falsely listed as two unused variables, these functions were called on in the HTML code.</li>
+<li>The validator also showed warnings concerning code that was available in various versions of JavaSccript. But, since none of it affected the running of the game, I did not change my code to get rid of these warnings.</li>
 </ul>
+<li>Accessibility</li>
+
 </ul>
 
 <h2>Features for the future</h2>
 
-To add more levels that increase the difficulty. For example, both of the maths formulas could either be multiplication, divison, addition or subtraction. This would mean that the user would have to figure out the sum of for both of the quesitons in the limited time before they disappear from the screen.
+Creating more levels with increased difficulty for the comparisons that must be made would be a feature that I would like to add. For example, the numbers to compare could show as be multiplication, divison, addition or subtraction questions that the user would have to find the sum of to then compare which answer is higher.
 
 <h2>Deployment</h2>
 I deployed the site to GitHub by accessing the repository I had created for the project, going into settings and choosing the main branch to deploy from in the Pages section. Any edits I made since the deployment had been committed to the repository.
+
+The link to the game can be found <a href="https://manpreetrao.github.io/survival-maths/" target="_blank">here</a>.
 
 <h2>Resources and Credits</h2>
 <ul>
