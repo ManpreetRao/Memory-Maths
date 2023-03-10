@@ -34,8 +34,8 @@ async function buttonClicked(guess) {
             lives = lives + 250;
         }
     }
-
     score.innerHTML = currentScore;
+
     answer.innerHTML = result;
 
     await giveResult();
@@ -52,7 +52,6 @@ async function giveResult(result) {
 //A function to randomise the numbers for first 5 levels
 function randomiseIntEasy(max) {
     return Math.floor(Math.random() * (max + 1));
-
 }
 
 //A function to check if number 2 is higher than number 1
@@ -78,17 +77,15 @@ function gameLoop() {
         document.querySelector('.result').style.visibility = "visible";
         document.querySelector('#result-text').innerHTML = `<p>Awww.. You ran out of lives :(<br>Great attempt! You scored ${currentScore} points</p><br><p>Your high score is ${highScore}</p>`;
     } else if (currentScore > 29) {
+        //A condition to stop the game when the user scores 30 points
         highScore = 30;
         document.querySelector('.container').style.visibility = "collapse";
         document.querySelector('.result').style.visibility = "visible";
         document.querySelector('#result-text').innerHTML = `<p>Amazing! <br>You've got too much health for me to handle! You scored 30 points</p><br><p>Your high score is ${highScore}</p>`;
     } 
-    //A condition to stop the game when the user scores 30 points
-    
 
     number1 = randomiseIntEasy(10000);
     number2 = randomiseIntEasy(10000);
-
     
     numberOne.innerHTML = number1;
     numberTwo.innerHTML = number2;

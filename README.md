@@ -58,12 +58,14 @@ I ran my code through the official <a href="https://jshint.com/" target="_blank"
 <li>The validator also showed warnings concerning code that was available in various versions of JavaSccript. But, since none of it affected the running of the game, I did not change my code to get rid of these warnings.</li>
 </ul>
 <li>Accessibility</li>
-
+I ran the webpage through the Lighthouse testing in order to see how accessible it was, and it returned a rating of 100 for accessibility. SEO was rated at 89, but since this is a stan-alone game, I do not consider it a high-priority to make sure that this game can reach a large audience.
+<br>
+<img src="/assets/images/lighthouse_test.png" alt="Lighthouse rating of Survival Maths">
 </ul>
 
 <h2>Features for the future</h2>
 
-Creating more levels with increased difficulty for the comparisons that must be made would be a feature that I would like to add. For example, the numbers to compare could show as be multiplication, divison, addition or subtraction questions that the user would have to find the sum of to then compare which answer is higher.
+Creating more levels with increased difficulty for the comparisons that must be made would be a feature that I would like to add. For example, the numbers to compare could show as multiplication, divison, addition or subtraction questions that the user would have to find the sum of to then compare which answer is higher. The questions could start as easy signle digit formulas to grow more difficult as the user wins more points.
 
 <h2>Deployment</h2>
 I deployed the site to GitHub by accessing the repository I had created for the project, going into settings and choosing the main branch to deploy from in the Pages section. Any edits I made since the deployment had been committed to the repository.
