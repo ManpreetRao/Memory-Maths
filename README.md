@@ -74,7 +74,8 @@ The link to the game can be found <a href="https://manpreetrao.github.io/surviva
 
 <h2>Resources and Credits</h2>
 <ul>
-<li>Spencer Barriball - How to use async functions and time-outs, as well as the initial idea for the user's lives.</li> 
+<li>Spencer Barriball - How to use async functions and time-outs, which were used to display the answer for 0.75 seconds.</li> 
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random">Mozilla.org</a> - How to implement the max random number code.</li>
 <li>Fontawesome - for the use of icons in the heading and the lives title.</li>
+<li>Google Fonts - for the use of fonts across the page.</li>
 </ul>
